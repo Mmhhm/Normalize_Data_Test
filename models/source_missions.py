@@ -2,9 +2,6 @@ from sqlalchemy import Numeric
 
 from db import db
 
-
-
-
 class SourceMissions(db.Model):
     __tablename__ = 'source_missions'
     mission_id = db.Column(db.Integer, primary_key= True)

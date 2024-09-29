@@ -1,0 +1,13 @@
+Without indexing:
+The query scans the data a sequential scan.
+The execution time is more or less 140 ms.
+
+Indexing:
+The main scan goes through the air_force column,
+so adding an index to the air_force column should
+shorten the scanning time and lighten the execution
+of the query.
+
+With indexing:
+The query scans the data using index scan.
+The execution time is much shorter - around 60 ms.
